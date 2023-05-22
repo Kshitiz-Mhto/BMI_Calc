@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22284A"
+    android:elevation="15dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvWt"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/card_bg"
+        android:elevation="15dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvWt"
+                android:layout_width="118dp"
+                android:layout_height="45dp"
+                android:text="Weight"
+                android:textColor="#DEF0F3"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/etWt"
+                app:layout_constraintHorizontal_bias="0.095"
+                app:layout_constraintStart_toStartOf="@+id/etWt"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.215" />
+
+            <EditText
+                android:id="@+id/etWt"
+                android:layout_width="157dp"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textColor="#B7D1E6"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.082"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWt"
+                app:layout_constraintVertical_bias="0.652" />
+
+            <TextView
+                android:id="@+id/etKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KG"
+                android:textColor="#E3D4D4"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/etWt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toEndOf="@+id/etWt"
+                app:layout_constraintTop_toTopOf="@+id/etWt"
+                app:layout_constraintVertical_bias="0.4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHeight"
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="#9373CC"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvWt"
+        app:layout_constraintVertical_bias="0.152">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvHt"
+                android:layout_width="118dp"
+                android:layout_height="45dp"
+                android:text="Height"
+                android:textColor="#DEF0F3"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/etHt"
+                app:layout_constraintHorizontal_bias="0.095"
+                app:layout_constraintStart_toStartOf="@+id/etHt"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.215" />
+
+            <EditText
+                android:id="@+id/etHt"
+                android:layout_width="157dp"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textColor="#B7D1E6"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.082"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHt"
+                app:layout_constraintVertical_bias="0.652" />
+
+            <TextView
+                android:id="@+id/etCm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CM"
+                android:textColor="#E3D4D4"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/etHt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toEndOf="@+id/etHt"
+                app:layout_constraintTop_toTopOf="@+id/etHt"
+                app:layout_constraintVertical_bias="0.4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/idButton"
+        android:layout_width="255dp"
+        android:layout_height="62dp"
+        android:background="#F44336"
+        android:backgroundTint="#E91E63"
+        android:elevation="15dp"
+        android:rotation="-4"
+        android:rotationX="-1"
+        android:rotationY="-1"
+        android:text="Calculate>>"
+        android:textSize="25sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvHeight"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvResult"
+        android:layout_width="308dp"
+        android:layout_height="150dp"
+        android:elevation="15dp"
+        app:cardBackgroundColor="#242E65"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idButton"
+        app:layout_constraintVertical_bias="0.627">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#DACACA"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#4DC852"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/etRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#8A8383"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
